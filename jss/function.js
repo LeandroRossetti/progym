@@ -12,7 +12,11 @@ if (mm < 10) {
   mm = '0' + mm;
 }
 
-today = dd + '/' + mm + '/' + yyyy;
+resultado= dd + '/' + mm + '/' + yyyy;
+
+return resultado;
 
 
 }
+
+

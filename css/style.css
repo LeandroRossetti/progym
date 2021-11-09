@@ -34,6 +34,11 @@ body {
     min-height: 5rem;
   }
   
+  .textUsuario{
+
+    color: white;
+   display:none;
+  }
 
 
  .navbar{
@@ -43,7 +48,7 @@ body {
  h1{
    color:white;
    margin: 0px;
-   font-family: 'Zen Antique Soft', serif;
+   font-family: 'Montserrat';
    height: 40px;
    
  }

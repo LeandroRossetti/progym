@@ -1,3 +1,29 @@
+const nombreUsuario = async () => {
+    const { value } = await Swal.fire({
+        title: 'Bienvenido/a, escribi tu nombre!',
+        input: 'text'
+
+    })
+
+    if (value) {
+
+        guardar('user', value)
+
+    }
+    else {
+        console.log('No se encontro valor para retornar')
+    }
+}
+
+let nombreDeUsuario = sessionStorage.getItem('user');
+
+if (!nombreDeUsuario) {
+    nombreUsuario();
+}
+
+
+
+/*
 class Personas {
     constructor(nombre, apellido, sede, cargo,dni){
 
@@ -6,7 +32,7 @@ class Personas {
     this.sede=sede;
     this.cargo=cargo;
     this.dni=dni;
-}  
+}
 
 
 altaPersona(){
@@ -24,7 +50,7 @@ toString(){
 
 
 }
-
+ */
 
 
 /* persona1.altaPersona();
