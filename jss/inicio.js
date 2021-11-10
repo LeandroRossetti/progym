@@ -1,19 +1,14 @@
-$('#leerSocio').click(function (e) {
-    e.preventDefault();
-    $.get("empleados.json", function (data) {
-        console.log(data.nombre);
-        $('#datosSocio').html(`
-            Nombre: ${data.nombre}<br>
+var titulo;
 
-            Apellido: ${data.apellido}<br>
+titulo=document.getElementById("textUsuario");
+titulo.innerHTML="Bienvenido  "+sessionStorage.getItem("user");
 
-            Nro.Socio: ${data.socioId}<br>
+var intro = document.getElementById('textUsuario');
 
-            Sede: ${data.sede}
-            
-            `
+if (sessionStorage.getItem("user")==null){
+    intro.style.backgroundColor = '#FF00FF';
+}
 
-        );
-    });
 
-});
+
+

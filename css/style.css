@@ -37,7 +37,7 @@ body {
   .textUsuario{
 
     color: white;
-   display:none;
+   visibility:visible;
   }
 
 
